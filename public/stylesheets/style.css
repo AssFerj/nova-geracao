@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  --bg-primary: #000414;
+  --bg-secondary: #161a2e;
+  --prim-color: #fffb00;
+  --second-color: #ffffff;
+  --terc-color: #d1d095;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+.bg-dojo{
+  background-color: var(--bg-primary);
+}
+.header{
+  padding: 1rem;
+  background-color: var(--bg-primary);
+  color: var(--second-color);
+}
+.prime-title{
+  font-size: 35px;
+  color: var(--prim-color)!important;
+}
+.text-light:hover{
+  color: var(--prim-color)!important;
+
+  transition: all .8s;
+}
+
+.btn-login{
+  background-color: #fffb0000;
+  border: 1px solid var(--prim-color);
+  border-radius: .2rem;
+  color: var(--prim-color);
+  font-weight: bolder;
+  padding: .7rem 2.5rem;
+  cursor: pointer;
+}
+.btn-login:hover{
+  background-color: var(--prim-color);
+  border: 1px solid var(--prim-color);
+  border-radius: .2rem;
+  color: var(--bg-primary);
+  font-weight: bolder;
+  padding: .7rem 2.5rem;
+  cursor: pointer;
+  transition: all .8s;
+}
+.btn-sign-up{
+  background-color: var(--prim-color);
+  border: 1px solid var(--prim-color);
+  border-radius: .2rem;
+  color: var(--bg-primary);
+  font-weight: bolder;
+  padding: .7rem 2.5rem;
+  cursor: pointer;
+}
+
+
+
+main{
+  width: 100%;
+  height: 50%;
+  padding: 10rem 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--prim-color);
+  background-image: url('/images/nova-geracao-jiu-jitsu-bg-dark-unsplash.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-content button{
+  margin: 2rem 0;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  background-color: var(--prim-color);
+  color: var(--bg-primary);
+}
+.main-content button:hover{
+  margin: 2rem 0;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px 0 #fffb0046, 0 6px 20px 0 #fffb0046;
+  transition: all .5s;
+}
+.main-content h2{
+  margin: 0 30%;
+}
+.main-content p{
+  margin: 2% 20%;
+  color: var(--second-color);
+  font-size: 1rem;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 1.5rem;
+  background-color: var(--bg-primary);
+  color: var(--second-color);
+}
+.footer-widget{
+  width: 15vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-widget h3{
+  font-size: 2rem;
+}
+.footer-widget hr{
+  width: 5rem;
+  height: .2rem;
+  text-align: center;
+  color: var(--prim-color);
+  background-color: var(--prim-color);
+  margin: 1rem 35%;
+}
+.footer-widget p{
+  margin: 1rem 0;
+}
+footer .social .bx{
+  color: var(--terc-color);
+  margin: 0 .5REM;
+}
+footer .social .bx:hover{
+  color: var(--prim-color);
+  cursor: pointer;
+  transition: all .6S;
+}
+.footer-widget form{
+  display: flex;
+}
+.footer-widget form input{
+  padding: .7rem;
+  color: var(--terc-color);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--prim-color);
+  border-radius: .2rem 0 0 .2rem;
+}
+.btn-news{
+  background-color: var(--prim-color);
+  border: 1px solid var(--prim-color);
+  border-radius: 0 .2rem .2rem 0;
+  color: var(--bg-primary);
+  font-weight: bolder;
+  padding: .5rem;
+  cursor: pointer;
+}
+.btn-news i{
+  color: var(--bg-primary);
+}
+.copy{
+  text-align: center;
+  background-color: var(--prim-color);
+  color: var(--bg-primary);
+  padding: .5rem;
+}
