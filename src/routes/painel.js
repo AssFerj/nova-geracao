@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const PainelController = require('../controllers/PainelController');
 
 
 /* GET home page. */
-router.get('/', (req, res)=>{
-    res.render('painel', {title: 'Nova Geração | Painel'});
-});
+router.get('/', PainelController.index);
+
 module.exports = router;

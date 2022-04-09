@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const HomeController = require('../controllers/HomeController');
 
 
-/* GET home page. */
-router.get('/', (req, res)=>{
-    res.render('index', {title: 'Nova Geração'});
-});
+/* GET Home page. */
+router.get('/', HomeController.index);
+
 module.exports = router;

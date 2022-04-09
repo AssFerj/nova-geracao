@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const ContasController = require('../controllers/ContasController');
 
 
-/* GET home page. */
-router.get('/', (req, res)=>{
-    res.render('contas', {title: 'Nova Geração | Contas'});
-});
+/* GET Contas page. */
+router.get('/', ContasController.index);
+
 module.exports = router;

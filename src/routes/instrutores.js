@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const InstrutoresController = require('../controllers/InstrutoresController');
 
 
-/* GET home page. */
-router.get('/', (req, res)=>{
-    res.render('instrutores', {title: 'Nova Geração | Instrutores'});
-});
+/* GET Instrutores page. */
+router.get('/', InstrutoresController.index);
+
 module.exports = router;
