@@ -1,14 +1,94 @@
 <%- include('partials/header')  %> 
 
 <!-- Tabela de Alunos -->
-<section>
+<section class=" section-list">
     <div class="container">
         <h1 class="mt-4">Alunos</h1>
 
         <div class="d-flex justify-content-end">
             <div class="d-flex">
                 <div class="btn-group-sm mx-1">
-                    <button type="button" class="btn btn-success"><i class="bi bi-plus-square"></i></button>
+                    <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#modalCadastroAluno"><i class="bi bi-plus-square"></i></button>
+
+                    <!-- Modal de Cadastro -->
+                    <div class="modal fade" id="modalCadastroAluno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                         <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cadastrar Aluno</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+
+                            <form class="row g-3">
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+
+                              <div class="col-md-6">
+                                <label for="inputNome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="inputNome">
+                              </div>
+                              <div class="col-md-4">
+                                <label for="inputTelefone" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" id="inputTelefone" placeholder="88 999999999">
+                              </div>
+                              <div class="col-md-2">
+                                <label for="inputIdade" class="form-label">Idade</label>
+                                <input type="number" class="form-control" id="inputIdade">
+                              </div>
+
+                              <div class="col-md-6">
+                                <label for="inputAddress" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Rua Exemplo, 15, Bairro">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputAddress2" class="form-label">referência</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Ponto de referência">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="col-md-3">
+                                <label for="inputState" class="form-label">Estado</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>Ceará</option>
+                                  <option>Piauí</option>
+                                </select>
+                              </div>
+                              <div class="col-md-3">
+                                <label for="inputZip" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="inputZip">
+                              </div>
+
+                              <div class="col-md-6">
+                                <label for="inputResponsavel" class="form-label">Nome do Responsável</label>
+                                <input type="text" class="form-control" id="inputResponsavel">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputTelResp" class="form-label">Telefone do Responsável</label>
+                                <input type="text" class="form-control" id="inputTelResp" placeholder="88 999999999">
+                              </div>
+
+                              <div class="col-12">
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                              </div>
+                            </form>
+
+                          </div>
+                          <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fim Modal de Cadastro -->
 
                     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     FILTRAR
@@ -32,14 +112,15 @@
                 </div>
             </div>
         </div>
-
+    
+    <!-- Listagem -->
     <div class="table-responsive">
     <table class="table table-striped table-sm mt-2 mb-4">
     <thead>
         <tr>
         <th scope="col">ID</th>
-        <th scope="col">Usuário</th>
         <th scope="col">Nome</th>
+        <th scope="col">Email</th>
         <th scope="col">Telefone</th>
         <th scope="col">Matrícula</th>
         <th scope="col">Ações</th>
@@ -52,76 +133,92 @@
         <td>placeholder</td>
         <td>text</td>
         <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEdicaoAluno"><i class="bi bi-pencil-square"></i></button>
+
+            <!-- Modal de Edição -->
+            <div class="modal fade" id="modalEdicaoAluno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Aluno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputNome">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputTelefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="inputTelefone" placeholder="88 999999999">
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputIdade" class="form-label">Idade</label>
+                        <input type="number" class="form-control" id="inputIdade">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua Exemplo, 15, Bairro">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputAddress2" class="form-label">referência</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Ponto de referência">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-md-3">
+                        <label for="inputState" class="form-label">Estado</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Ceará</option>
+                          <option>Piauí</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="inputZip" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputResponsavel" class="form-label">Nome do Responsável</label>
+                        <input type="text" class="form-control" id="inputResponsavel">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputTelResp" class="form-label">Telefone do Responsável</label>
+                        <input type="text" class="form-control" id="inputTelResp" placeholder="88 999999999">
+                      </div>
+
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-success">Cadastrar</button>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fim Modal de Edição -->
+
             <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
           </div></td>
         </tr>
-        <tr>
-        <td>1,002</td>
-        <td>placeholder</td>
-        <td>irrelevant</td>
-        <td>visual</td>
-        <td>layout</td>
-        <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-            <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
-          </div></td>
-        </tr>
-        <tr>
-        <td>1,003</td>
-        <td>data</td>
-        <td>rich</td>
-        <td>dashboard</td>
-        <td>tabular</td>
-        <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-            <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
-          </div></td>
-        </tr>
-        <tr>
-        <td>1,003</td>
-        <td>information</td>
-        <td>placeholder</td>
-        <td>illustrative</td>
-        <td>data</td>
-        <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-            <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
-          </div></td>
-        </tr>
-        <tr>
-        <td>1,004</td>
-        <td>text</td>
-        <td>random</td>
-        <td>layout</td>
-        <td>dashboard</td>
-        <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-            <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
-          </div></td>
-        </tr>
-        <tr>
-        <td>1,005</td>
-        <td>dashboard</td>
-        <td>irrelevant</td>
-        <td>text</td>
-        <td>placeholder</td>
-        <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-            <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
-          </div></td>
-        </tr>
-        <tr>
-        <td>1,006</td>
-        <td>dashboard</td>
-        <td>illustrative</td>
-        <td>rich</td>
-        <td>data</td>
-        <td><div class="btn-group-sm" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-            <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
-          </div></td>
-        </tr>
+        
     </tbody>
     </table>
     </div>

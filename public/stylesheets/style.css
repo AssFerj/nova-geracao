@@ -174,3 +174,6 @@ footer .social .bx:hover{
   color: var(--bg-primary);
   padding: .5rem;
 }
+.section-list{
+  min-height: 45vh !important;
+}
