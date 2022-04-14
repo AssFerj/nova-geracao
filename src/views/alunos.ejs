@@ -20,7 +20,7 @@
                           </div>
                           <div class="modal-body">
 
-                            <form class="row g-3">
+                            <form class="row g-3" action="" method="">
                               <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmail4">
@@ -118,20 +118,19 @@
     <table class="table table-striped table-sm mt-2 mb-4">
     <thead>
         <tr>
-        <th scope="col">ID</th>
         <th scope="col">Nome</th>
-        <th scope="col">Email</th>
+        <th scope="col">Idade</th>
         <th scope="col">Telefone</th>
-        <th scope="col">Matrícula</th>
         <th scope="col">Ações</th>
         </tr>
     </thead>
     <tbody>
-        <td>1,001</td>
-        <td>random</td>
-        <td>data</td>
-        <td>placeholder</td>
-        <td>text</td>
+
+        <% aluno.forEach(aluno=>{ %>
+
+        <td><%= aluno.nome %></td>
+        <td><%= aluno.idade %></td>
+        <td><%= aluno.telefone %></td>
         <td><div class="btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEdicaoAluno"><i class="bi bi-pencil-square"></i></button>
 
@@ -145,7 +144,7 @@
                   </div>
                   <div class="modal-body">
 
-                    <form class="row g-3">
+                    <form class="row g-3" action="" method="">
                       <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4">
@@ -218,7 +217,9 @@
             <button type="button" class="btn btn-danger"><i class="bi bi-x-square"></i></button>
           </div></td>
         </tr>
-        
+
+        <% }) %>
+
     </tbody>
     </table>
     </div>

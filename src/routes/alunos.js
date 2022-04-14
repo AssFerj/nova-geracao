@@ -6,4 +6,7 @@ const AlunosController = require('../controllers/AlunosController')
 /* GET Alunos page. */
 router.get('/', AlunosController.index);
 
+/* Cadastro de Alunos */
+router.post('/', AlunosController.cadastrar);
+
 module.exports = router;
