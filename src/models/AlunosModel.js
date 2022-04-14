@@ -6,73 +6,181 @@ module.exports={
             id: 1,
             nome: 'Assis Júnior',
             idade: 34,
-            telefone: '88997856905'
+            telefone: '88997856905',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 2,
             nome: 'Luis Carlos',
             idade: 29,
-            telefone: '88997569852'
+            telefone: '88997569852',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 3,
             nome: 'Taylor Swift',
             idade: 33,
-            telefone: '88991254545'
+            telefone: '88991254545',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 4,
             nome: 'Ana Carolina',
             idade: 34,
-            telefone: '88991256548'
+            telefone: '88991256548',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 5,
             nome: 'Adriana Calcanhoto',
             idade: 39,
-            telefone: '88993584659'
+            telefone: '88993584659',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 6,
             nome: 'Lucas Lima',
             idade: 34,
-            telefone: '88999562312'
+            telefone: '88999562312',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 7,
             nome: 'Edward Maia',
             idade: 30,
-            telefone: '88999856421'
+            telefone: '88999856421',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 8,
             nome: 'Justin Beaber',
             idade: 28,
-            telefone: '88991256342'
+            telefone: '88991256342',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 9,
             nome: 'Rodrigo Minotauro',
             idade: 42,
-            telefone: '88992354262'
+            telefone: '88992354262',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 10,
             nome: 'Aderson Silva',
             idade: 34,
-            telefone: '88997856905'
+            telefone: '88997856905',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 11,
             nome: 'Fernanda Porto',
             idade: 36,
-            telefone: '88993178965'
+            telefone: '88993178965',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         },
         {
             id: 12,
             nome: 'Marina Elali',
             idade: 34,
-            telefone: '88991458975'
+            telefone: '88991458975',
+            endereco: 'Rua Jose Maria Veras, 84, Olinda',
+            referencia: 'Px buteco da Mazé',
+            cidade: 'Camocim',
+            estado: 'Ceará',
+            cep: 62400000,
+            responsavel: '',
+            telefoneResponsavel: '',
+            email: 'assisjunior@mail.com',
+            senha: '123456'
         }
     ],
     index(){
