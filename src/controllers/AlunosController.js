@@ -7,6 +7,7 @@ const AlunosController = {
     },
     cadastrar: (req, res)=>{
         AlunosModel.cadastrar(req.body);
+        return res.redirect('/alunos');
         
     },
     editar: (req, res)=>{

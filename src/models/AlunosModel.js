@@ -1,7 +1,7 @@
 const {uuid}=require('uuidv4')
 
 module.exports={
-    aluno: [
+    alunos: [
         {
             id: 1,
             nome: 'Assis Júnior',
@@ -176,7 +176,7 @@ module.exports={
             referencia: 'Px buteco da Mazé',
             cidade: 'Camocim',
             estado: 'Ceará',
-            cep: 62400000,
+            cep: 62400000, 
             responsavel: '',
             telefoneResponsavel: '',
             email: 'assisjunior@mail.com',
@@ -184,11 +184,11 @@ module.exports={
         }
     ],
     index(){
-        return this.aluno
+        return this.alunos
     },
-    cadastrar({nome, idade, telefone}){
-        if(!nome || idade || telefone) return
+    cadastrar({nome, idade, telefone, endereco, referencia, cidade, estado, cep, responsavel,telefoneResponsavel, email, senha}){
+        if(!nome || !idade || !telefone || !endereco || !referencia || !cidade || !estado || !cep || !responsavel || !telefoneResponsavel || !email || !senha) return
 
-        this.aluno.push({id: uuid(), nome, idade, telefone});
+        this.alunos.push({id: uuid(), nome, idade, telefone, endereco, referencia, cidade, estado, cep, responsavel,telefoneResponsavel, email, senha});
     }
 }
